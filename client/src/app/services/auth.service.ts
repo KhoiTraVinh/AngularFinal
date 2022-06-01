@@ -29,13 +29,13 @@ export class AuthService {
         password: credentials.password,
       })
       .pipe(
-        map((res: any) => {
+        map((res: any) => {         
           let user = {
             email: credentials.email,
             token: res.token,
           };
           this._token.setToken(res.token);
-          this._token.setUser(res.data[0]);
+          this._token.setUser(res.name);
           console.log(res);
           this.userSubject.next(user);
           return user;
