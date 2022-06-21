@@ -18,13 +18,22 @@ export class HomeComponent implements OnInit {
   products: Product[] = [];
   categories: any[] = [
     {
-      name: 'Khoi',
+      name: 'Jean',
     },
     {
-      name: 'NamNgu',
+      name: 'T-Shirt',
     },
     {
-      name: 'Khoi',
+      name: 'Short',
+    },
+    {
+      name: 'Jean',
+    },
+    {
+      name: 'T-Shirt',
+    },
+    {
+      name: 'Short',
     },
   ];
   loading = false;
